@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- <ThingDef ParentName="WT_BaseGunUnique"> -->
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_AutomaticSniperRifle</defName>
+    <label>automatic sniper rifle</label>
+    <description>Short-stroke sniper rifle.\n\nA technical marvel, this rifle started life as failed project. It was originally intended as a semi-auto rifle, however complications with the trigger pack made full-auto runways extremely common. Whilst this would have killed most projects, the groupings collected from these failed tests were still extremely tight, and it was decided that experimentation on a fully-automatic version would begin. Only 4 experimental rifles were built before the government that was backing the project fell, and the rifles were quietly forgotten.\n\nEquipped with a telescopic sight to increase effective range.\n\nFires an intermediate rifle caliber projectile.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/FO2Bozar</texPath>
+      <!-- <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath> -->
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <MarketValue>600</MarketValue>
+      <WorkToMake>28000</WorkToMake>
+      <MaxHitPoints>444</MaxHitPoints>
+      <Mass>4.44</Mass>
+      <AccuracyTouch>1.0</AccuracyTouch>
+      <AccuracyShort>1.0</AccuracyShort>
+      <AccuracyMedium>1.0</AccuracyMedium>
+      <AccuracyLong>1.0</AccuracyLong>
+      <RangedWeapon_Cooldown>0.44</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <WoodLog>1</WoodLog>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <weaponClasses>
+        <li>LongShots</li>
+        <li>RangedLight</li>
+        <!-- <li>SelfLoading</li> -->
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <!-- <defaultProjectile>Bullet_556x45mmR</defaultProjectile> -->
+        <defaultProjectile>Bullet_SniperRifle</defaultProjectile>
+        <warmupTime>0.44</warmupTime>
+        <range>100.0</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>44</power>
+        <cooldownTime>0.44</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>44</power>
+        <cooldownTime>0.44</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

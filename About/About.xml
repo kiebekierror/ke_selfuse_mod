@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>K.E. Mod</name>
+	<author>K.E.</author>
+	<packageId>kebker.mod</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<url></url>
+	<description>K.E. Mod.</description>
+</ModMetaData>
