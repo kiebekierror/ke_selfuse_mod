@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <com.github.alandariva.moreplanning> -->
+  <Planning.label>更多計劃</Planning.label>
+  <Planning.description>更多計劃選項</Planning.description>
+  <!-- </com.github.alandariva.moreplanning> -->
+
+  <!-- </pathavoid.kv.rw> -->
+  <Pathing.label>路線</Pathing.label>
+  <Pathing.description>允許你改變你殖民者路徑的優先順序。</Pathing.description>
+  <!-- </pathavoid.kv.rw> -->
+
+</LanguageData>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <!-- <com.github.alandariva.moreplanning> -->
+    <MorePlanning.SettingRemoveIfBuildingDespawned.label>建造完成后移除計劃</MorePlanning.SettingRemoveIfBuildingDespawned.label>
+    <MorePlanning.SettingRemoveIfBuildingDespawned.desc>在計劃上完成建造或拆除時，移除計劃。</MorePlanning.SettingRemoveIfBuildingDespawned.desc>
+
+    <MorePlanning.PlanDesc>放置計劃標記。它們除了幫助你規劃未來的擴張之外沒有別的作用。按住【shift】鍵可以覆蓋其它計劃。</MorePlanning.PlanDesc>
+
+    <MorePlanning.PlanVisibility>顯示/隱藏</MorePlanning.PlanVisibility>
+    <MorePlanning.PlanVisibilityDesc>顯示或隱藏計劃显示或隐藏计划。</MorePlanning.PlanVisibilityDesc>
+
+    <Planning.label>更多計劃</Planning.label>
+
+    <MorePlanning.Opacity.label>透明度: {0}%</MorePlanning.Opacity.label>
+    <MorePlanning.Opacity.desc>更改計劃的透明度。</MorePlanning.Opacity.desc>
+
+    <MorePlanning.DefaultOpacity>（默認）</MorePlanning.DefaultOpacity>
+
+    <MorePlanning.PlanCopy>複製計劃</MorePlanning.PlanCopy>
+    <MorePlanning.PlanCopyDesc>複製所選區域的計劃。</MorePlanning.PlanCopyDesc>
+
+    <MorePlanning.PlanCut>剪切計劃</MorePlanning.PlanCut>
+    <MorePlanning.PlanCutDesc>剪切所選區域的計劃。</MorePlanning.PlanCutDesc>
+
+    <MorePlanning.PlanPaste>粘貼計劃</MorePlanning.PlanPaste>
+    <MorePlanning.PlanPasteDesc>粘貼所選區域的計劃。 使用Misc1（{0}）鍵水平翻轉。 使用Misc2（{1}）鍵垂直翻轉。</MorePlanning.PlanPasteDesc>
+
+    <MorePlanning.NoCutCopiedPlan>沒有計劃被剪切或複製。</MorePlanning.NoCutCopiedPlan>
+
+    <MorePlanning.MissingPlanningDesignations>沒有找到指定的計劃。</MorePlanning.MissingPlanningDesignations>
+
+    <MorePlanning.DefaultColor>默認顔色</MorePlanning.DefaultColor>
+    <MorePlanning.Ok>確定</MorePlanning.Ok>
+
+    <MorePlanning.ChangeColor>改變顔色</MorePlanning.ChangeColor>
+
+    <MorePlanning.PlanImport>導入計劃</MorePlanning.PlanImport>
+    <MorePlanning.PlanImportError>導入計劃時出錯。</MorePlanning.PlanImportError>
+    <MorePlanning.PlanImportOK>從系統剪貼板中導入計劃。</MorePlanning.PlanImportOK>
+
+    <MorePlanning.PlanExport>導出計劃</MorePlanning.PlanExport>
+    <MorePlanning.PlanExportError>導出計劃時出錯。</MorePlanning.PlanExportError>
+    <MorePlanning.PlanExportOK>導出計劃到系統剪貼板。</MorePlanning.PlanExportOK>
+
+    <!-- </com.github.alandariva.moreplanning> -->
+</LanguageData>
