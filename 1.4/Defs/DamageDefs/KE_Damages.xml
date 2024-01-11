@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <DamageDef>
+    <defName>KE_AnestheticDart</defName>
+    <label>anasthetic dart</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death by an anesthetic dart.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <hediffSolid>Gunshot</hediffSolid>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <additionalHediffs>
+      <li>
+        <hediff>Anesthetic</hediff>
+		    <severityPerDamageDealt>1</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>KE_Damage_Anaesthetize</defName>
+    <label>KE_Damage_Anaesthetize</label>
+    <canInterruptJobs>true</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>1</defaultDamage>
+    <harmsHealth>false</harmsHealth>
+    <hediff>Anesthetic</hediff>
+    <hediffSolid>Anesthetic</hediffSolid>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <additionalHediffs>
+      <li>
+        <hediff>Anesthetic</hediff>
+        <severityPerDamageDealt>0</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+  </DamageDef>
+
+
+</Defs>

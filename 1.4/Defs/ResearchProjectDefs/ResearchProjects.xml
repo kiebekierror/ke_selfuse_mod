@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>KE_WeaponTech_T1</defName>
+    <label>K.E. weapon tech</label>
+    <description>Craft a selection of K.E. weapons, including K.E. Anesthetic Sniper Rifle.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>1.95</researchViewY>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+		<tab>KE_Mod_Tech</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>KE_WeaponTech_T2</defName>
+    <label>K.E. weapon tech</label>
+    <description>Craft a selection of K.E. weapons, including K.E. Sniper Rifle.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>1.95</researchViewY>
+    <prerequisites>
+      <li>KE_WeaponTech_T1</li>
+    </prerequisites>
+    <tab>KE_Mod_Tech</tab>
+  </ResearchProjectDef>
+
+</Defs>

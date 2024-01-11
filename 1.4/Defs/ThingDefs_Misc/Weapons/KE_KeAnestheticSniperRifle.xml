@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!-- <ThingDef ParentName="WT_BaseGunUnique"> -->
+  <!-- Anaesthetize? / Anaesthetic / Anesthetic -->
   <ThingDef ParentName="BaseGunWithQuality">
-    <defName>KE_KeSniperRifle</defName>
-    <label>K.E. Sniper Rifle</label>
-    <description>K.E. Sniper Rifle.</description>
+    <defName>KE_KeAnestheticSniperRifle</defName>
+    <label>K.E. Anesthetic Sniper Rifle</label>
+    <description>K.E. Anesthetic Sniper Rifle.</description>
     <graphicData>
-      <!-- <texPath>Things/Item/Equipment/WeaponRanged/FO2Bozar</texPath> -->
-      <texPath>Things/Item/Equipment/WeaponRanged/KESniperRifle</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/KEAnestheticSniperRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <MarketValue>600</MarketValue>
-      <WorkToMake>28000</WorkToMake>
+      <WorkToMake>280</WorkToMake>
       <MaxHitPoints>444</MaxHitPoints>
       <Mass>4.44</Mass>
       <AccuracyTouch>1.0</AccuracyTouch>
@@ -29,31 +28,32 @@
       <ComponentIndustrial>10</ComponentIndustrial>
     </costList>
     <weaponClasses>
-      <li>LongShots</li>
-      <li>RangedLight</li>
+        <li>LongShots</li>
+        <li>RangedHeavy</li>
     </weaponClasses>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <!-- <defaultProjectile>Bullet_556x45mmR</defaultProjectile> -->
-        <defaultProjectile>Bullet_SniperRifle</defaultProjectile>
-        <warmupTime>0.44</warmupTime>
+        <defaultProjectile>KE_Bullet_Anesthetic</defaultProjectile>
+        <warmupTime>4.44</warmupTime>
         <range>94.0</range>
-        <burstShotCount>4</burstShotCount>
-        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-        <soundCast>Shot_SniperRifle</soundCast>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <soundCast>PiercingSpine_Launch</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+    <comps>
+    </comps>
     <tools>
       <li>
         <label>stock</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>44</power>
+        <power>9</power>
         <cooldownTime>0.44</cooldownTime>
       </li>
       <li>
@@ -61,24 +61,40 @@
         <capacities>
           <li>Poke</li>
         </capacities>
-        <power>44</power>
+        <power>9</power>
         <cooldownTime>0.44</cooldownTime>
       </li>
     </tools>
     <weaponTags Inherit="False">
-      <li>SpacerGun</li>
       <li>SniperRifle</li>
     </weaponTags>
   </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>KE_Bullet_Anesthetic</defName>
+    <label>Anesthetic Bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/PiercingSpine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>KE_Damage_Anaesthetize</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <armorPenetrationBase>100</armorPenetrationBase>
+      <stoppingPower>10</stoppingPower>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
   <RecipeDef>
-    <defName>KE_MakeKeSniperRifle</defName>
-    <label>make K.E. Sniper Rifle</label>
-    <description>Make a K.E. Sniper Rifle.</description>
-    <jobString>making a K.E. Sniper Rifle</jobString>
+    <defName>KE_MakeKeAnestheticSniperRifle</defName>
+    <label>make K.E. Anesthetic Sniper Rifle</label>
+    <description>Make a K.E. Anesthetic Sniper Rifle.</description>
+    <jobString>making a K.E. Anesthetic Sniper Rifle</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Recipe_Smith</soundWorking>
-    <workAmount>48000</workAmount>
+    <workAmount>480</workAmount>
     <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
     <ingredients>
       <li>
@@ -123,9 +139,9 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <KE_KeSniperRifle>1</KE_KeSniperRifle>
+      <KE_KeAnestheticSniperRifle>1</KE_KeAnestheticSniperRifle>
     </products>
-    <researchPrerequisite>KE_WeaponTech_T2</researchPrerequisite>
+    <researchPrerequisite>KE_WeaponTech_T1</researchPrerequisite>
     <skillRequirements>
       <Crafting>7</Crafting>
     </skillRequirements>
