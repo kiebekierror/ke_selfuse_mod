@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>KE_Bullet_Anesthetic</defName>
+    <label>Anesthetic Bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/PiercingSpine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>KE_Damage_Anaesthetize</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <armorPenetrationBase>100</armorPenetrationBase>
+      <stoppingPower>10</stoppingPower>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+
+
+</Defs>

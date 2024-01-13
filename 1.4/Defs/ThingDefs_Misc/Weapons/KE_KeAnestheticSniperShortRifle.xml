@@ -4,11 +4,11 @@
 
   <!-- Anaesthetize? / Anaesthetic / Anesthetic -->
   <ThingDef ParentName="BaseGunWithQuality">
-    <defName>KE_KeAnestheticSniperRifle</defName>
-    <label>K.E. Anesthetic Sniper Rifle</label>
-    <description>K.E. Anesthetic Sniper Rifle.</description>
+    <defName>KE_KeAnestheticSniperShortRifle</defName>
+    <label>K.E. Anesthetic Sniper Short Rifle</label>
+    <description>K.E. Anesthetic Sniper Short Rifle.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/KEAnestheticSniperRifle</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/KEAnestheticSniperShortRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -16,7 +16,7 @@
       <MarketValue>600</MarketValue>
       <WorkToMake>280</WorkToMake>
       <MaxHitPoints>444</MaxHitPoints>
-      <Mass>4.44</Mass>
+      <Mass>1.44</Mass>
       <AccuracyTouch>1.0</AccuracyTouch>
       <AccuracyShort>1.0</AccuracyShort>
       <AccuracyMedium>1.0</AccuracyMedium>
@@ -38,7 +38,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>KE_Bullet_Anesthetic</defaultProjectile>
-        <warmupTime>4.44</warmupTime>
+        <warmupTime>1.44</warmupTime>
         <range>94.0</range>
         <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -74,9 +74,9 @@
 
   <RecipeDef>
     <defName>KE_MakeKeAnestheticSniperRifle</defName>
-    <label>make K.E. Anesthetic Sniper Rifle</label>
-    <description>Make a K.E. Anesthetic Sniper Rifle.</description>
-    <jobString>making a K.E. Anesthetic Sniper Rifle</jobString>
+    <label>make K.E. Anesthetic Sniper Short Rifle</label>
+    <description>Make a K.E. Anesthetic Sniper Short Rifle.</description>
+    <jobString>making a K.E. Anesthetic Sniper Short Rifle</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Recipe_Smith</soundWorking>
@@ -125,7 +125,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <KE_KeAnestheticSniperRifle>1</KE_KeAnestheticSniperRifle>
+      <KE_KeAnestheticSniperShortRifle>1</KE_KeAnestheticSniperShortRifle>
     </products>
     <researchPrerequisite>KE_WeaponTech_T1</researchPrerequisite>
     <skillRequirements>

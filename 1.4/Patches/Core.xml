@@ -42,6 +42,28 @@
     </operations>
   </Operation>
 
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "FabricationBench"]/recipes</xpath>
+        <value>
+          <li>KE_MakeKeAnestheticSniperShortRifle</li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+<!--
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "FabricationBench"]/recipes</xpath>
+        <value>
+          <li>KE_Make_Apparel_ShieldBelt</li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+ -->
 
 <!--
   <Operation Class="PatchOperationFindMod">
