@@ -5,7 +5,7 @@
   <!-- Anaesthetize? / Anaesthetic / Anesthetic -->
   <ThingDef ParentName="BaseGunWithQuality">
     <defName>KE_KeAnestheticSniperShortRifle</defName>
-    <label>K.E. Anesthetic Sniper Short Rifle</label>
+    <label>K.E. ASSR</label>
     <description>K.E. Anesthetic Sniper Short Rifle.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/KEAnestheticSniperShortRifle</texPath>
@@ -74,7 +74,7 @@
 
   <RecipeDef>
     <defName>KE_MakeKeAnestheticSniperShortRifle</defName>
-    <label>make K.E. Anesthetic Sniper Short Rifle</label>
+    <label>make K.E. ASSR</label>
     <description>Make a K.E. Anesthetic Sniper Short Rifle.</description>
     <jobString>making a K.E. Anesthetic Sniper Short Rifle</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -127,7 +127,7 @@
     <products>
       <KE_KeAnestheticSniperShortRifle>1</KE_KeAnestheticSniperShortRifle>
     </products>
-    <researchPrerequisite>KE_WeaponTech_T1</researchPrerequisite>
+    <researchPrerequisite>KE_WeaponTech_T3</researchPrerequisite>
     <skillRequirements>
       <Crafting>7</Crafting>
     </skillRequirements>
