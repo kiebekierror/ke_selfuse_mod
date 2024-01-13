@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+
   <!-- <ThingDef ParentName="WT_BaseGunUnique"> -->
   <ThingDef ParentName="BaseGunWithQuality">
     <defName>KE_KeSniperRifle</defName>
@@ -131,4 +133,6 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
+
+
 </Defs>
