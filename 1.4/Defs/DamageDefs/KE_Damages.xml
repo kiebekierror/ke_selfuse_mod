@@ -2,11 +2,11 @@
 <Defs>
 
 
-  <DamageDef>
-    <defName>KE_AnestheticDart</defName>
-    <label>anasthetic dart</label>
-    <workerClass>DamageWorker_AddInjury</workerClass>
+  <DamageDef Name="N_VWE_AnestheticDart" Abstract="True">
+    <label>K.E. Anasthetic Dart</label>
+    <canInterruptJobs>true</canInterruptJobs>
     <externalViolence>true</externalViolence>
+    <workerClass>DamageWorker_AddInjury</workerClass>
     <deathMessage>{0} has been shot to death by an anesthetic dart.</deathMessage>
     <hediff>Gunshot</hediff>
     <hediffSolid>Gunshot</hediffSolid>
@@ -21,23 +21,30 @@
     <armorCategory>Sharp</armorCategory>
     <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
     <isRanged>true</isRanged>
-    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
   </DamageDef>
+
+  <DamageDef ParentName="N_VWE_AnestheticDart">
+    <defName>KE_AnestheticDart</defName>
+  </DamageDef>
+
+
 
   <DamageDef>
     <defName>KE_Damage_Anaesthetize</defName>
-    <label>KE_Damage_Anaesthetize</label>
+    <label>K.E. Anaesthetize</label>
     <canInterruptJobs>true</canInterruptJobs>
     <makesBlood>false</makesBlood>
-    <defaultDamage>1</defaultDamage>
     <harmsHealth>false</harmsHealth>
-    <hediff>Anesthetic</hediff>
-    <hediffSolid>Anesthetic</hediffSolid>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <deathMessage>{0} has been shot to death by an K.E. Anaesthetize.</deathMessage>
+    <hediff>Gunshot</hediff>
+    <hediffSolid>Gunshot</hediffSolid>
     <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
     <additionalHediffs>
       <li>
         <hediff>Anesthetic</hediff>
-        <severityPerDamageDealt>0</severityPerDamageDealt>
+        <severityPerDamageDealt>1</severityPerDamageDealt>
         <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
       </li>
     </additionalHediffs>
@@ -45,6 +52,7 @@
     <armorCategory>Sharp</armorCategory>
     <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
     <isRanged>true</isRanged>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
   </DamageDef>
 
 
