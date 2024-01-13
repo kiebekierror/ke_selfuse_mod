@@ -7,8 +7,8 @@
     <description>Craft a selection of K.E. weapons, including K.E. Anesthetic Sniper Rifle.</description>
     <baseCost>1400</baseCost>
     <techLevel>Industrial</techLevel>
-  <researchViewX>7.00</researchViewX>
-  <researchViewY>1.95</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.10</researchViewY>
     <prerequisites>
       <li>Gunsmithing</li>
     </prerequisites>
@@ -21,8 +21,8 @@
     <description>Craft a selection of K.E. weapons, including K.E. Sniper Rifle.</description>
     <baseCost>1400</baseCost>
     <techLevel>Industrial</techLevel>
-  <researchViewX>7.00</researchViewX>
-  <researchViewY>1.95</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.10</researchViewY>
     <prerequisites>
       <li>KE_WeaponTech_T1</li>
     </prerequisites>

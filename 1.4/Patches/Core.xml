@@ -18,7 +18,7 @@
       </li>
     </value>
   </Operation>
-<!--
+
   <Operation Class="PatchOperationSequence">
     <operations>
       <li Class="PatchOperationAdd">
@@ -29,7 +29,18 @@
       </li>
     </operations>
   </Operation>
- -->
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "FabricationBench"]/recipes</xpath>
+        <value>
+          <li>KE_MakeKeAnestheticSniperRifle</li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
 
 <!--
   <Operation Class="PatchOperationFindMod">
