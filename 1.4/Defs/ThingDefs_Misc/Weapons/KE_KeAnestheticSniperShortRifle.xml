@@ -30,8 +30,8 @@
       <ComponentIndustrial>10</ComponentIndustrial>
     </costList>
     <weaponClasses>
-        <li>LongShots</li>
-        <li>RangedHeavy</li>
+      <li>LongShots</li>
+      <li>RangedLight</li>
     </weaponClasses>
     <verbs>
       <li>

@@ -6,7 +6,7 @@
     <defName>KE_WeaponTech_T1</defName>
     <label>K.E. weapon tech T1</label>
     <description>Craft a selection of K.E. weapons, including K.E. Anesthetic Sniper Rifle.</description>
-    <baseCost>1400</baseCost>
+    <baseCost>1444</baseCost>
     <techLevel>Industrial</techLevel>
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.10</researchViewY>
@@ -20,7 +20,7 @@
     <defName>KE_WeaponTech_T2</defName>
     <label>K.E. weapon tech T2</label>
     <description>Craft a selection of K.E. weapons, including K.E. Sniper Rifle.</description>
-    <baseCost>1400</baseCost>
+    <baseCost>2444</baseCost>
     <techLevel>Industrial</techLevel>
     <researchViewX>1.00</researchViewX>
     <researchViewY>0.10</researchViewY>
@@ -34,7 +34,22 @@
     <defName>KE_WeaponTech_T3</defName>
     <label>K.E. weapon tech T3</label>
     <description>Craft a selection of K.E. weapons, including K.E. Anesthetic Sniper Short Rifle.</description>
-    <baseCost>1400</baseCost>
+    <baseCost>3444</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.10</researchViewY>
+    <prerequisites>
+      <li>KE_WeaponTech_T1</li>
+    </prerequisites>
+    <tab>KE_Mod_Tech</tab>
+  </ResearchProjectDef>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>KE_WeaponTech_T3</defName>
+    <label>K.E. weapon tech T3</label>
+    <description>Nothing Yet.</description>
+    <baseCost>4444</baseCost>
     <techLevel>Industrial</techLevel>
     <researchViewX>1.00</researchViewX>
     <researchViewY>0.10</researchViewY>

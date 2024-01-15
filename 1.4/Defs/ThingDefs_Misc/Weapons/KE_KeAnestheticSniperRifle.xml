@@ -16,7 +16,7 @@
       <MarketValue>600</MarketValue>
       <WorkToMake>280</WorkToMake>
       <MaxHitPoints>444</MaxHitPoints>
-      <Mass>4.44</Mass>
+      <Mass>1.44</Mass>
       <AccuracyTouch>1.0</AccuracyTouch>
       <AccuracyShort>1.0</AccuracyShort>
       <AccuracyMedium>1.0</AccuracyMedium>
@@ -30,8 +30,8 @@
       <ComponentIndustrial>10</ComponentIndustrial>
     </costList>
     <weaponClasses>
-        <li>LongShots</li>
-        <li>RangedHeavy</li>
+      <li>LongShots</li>
+      <li>RangedLight</li>
     </weaponClasses>
     <verbs>
       <li>
