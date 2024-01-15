@@ -39,22 +39,21 @@
     <researchViewX>1.00</researchViewX>
     <researchViewY>0.10</researchViewY>
     <prerequisites>
-      <li>KE_WeaponTech_T1</li>
+      <li>KE_WeaponTech_T2</li>
     </prerequisites>
     <tab>KE_Mod_Tech</tab>
   </ResearchProjectDef>
-  </ResearchProjectDef>
 
   <ResearchProjectDef>
-    <defName>KE_WeaponTech_T3</defName>
-    <label>K.E. weapon tech T3</label>
+    <defName>KE_WeaponTech_T4</defName>
+    <label>K.E. weapon tech T4</label>
     <description>Nothing Yet.</description>
     <baseCost>4444</baseCost>
     <techLevel>Industrial</techLevel>
     <researchViewX>1.00</researchViewX>
     <researchViewY>0.10</researchViewY>
     <prerequisites>
-      <li>KE_WeaponTech_T1</li>
+      <li>KE_WeaponTech_T3</li>
     </prerequisites>
     <tab>KE_Mod_Tech</tab>
   </ResearchProjectDef>
