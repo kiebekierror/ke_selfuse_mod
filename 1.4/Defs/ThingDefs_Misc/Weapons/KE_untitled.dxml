@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VWE_Gun_DartGun</defName>
+    <label>dart gun</label>
+    <description>A non-lethal air gun used to reduce irritability or agitation in animals or humans via anesthetic drugs commonly referred to as tranquilizers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/DartGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>VWE_NonLethal</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>4.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Neutroamine>20</Neutroamine>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VWE_Bullet_DartGun</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>36.9</range>
+        <soundCast>VWENL_Shot_DartGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+        <li>NonLethal</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>KE_Bullet_DartGun</defName>
+    <label>tranquilizer dart</label>
+    <graphicData>
+      <texPath>Things/Projectile/DartSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>KE_AnestheticDart</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <stoppingPower>5</stoppingPower>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+
+</Defs>

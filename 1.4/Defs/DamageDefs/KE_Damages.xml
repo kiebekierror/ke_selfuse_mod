@@ -56,4 +56,26 @@
   </DamageDef>
 
 
+
+  <DamageDef>
+    <defName>KE_Damage_AnaesthetizeGas</defName>
+    <label>Anaesthetize gas</label>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(0.706, 0.839, 0.09, 0.05)</explosionColorEdge>
+    <harmsHealth>false</harmsHealth>
+    <soundExplosion>Explosion_Smoke</soundExplosion>
+    <combatLogRules>Damage_Smoke</combatLogRules>
+    <additionalHediffs>
+      <li>
+        <hediff>Anesthetic</hediff>
+        <severityPerDamageDealt>1</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+
 </Defs>

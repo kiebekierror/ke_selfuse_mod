@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="TrapIEDBase">
+    <defName>KE_TrapIED_AnaesthetizeGas</defName>
+    <label>IED Anaesthetize trap</label>
+    <description>A pair of anaesthetize gas shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDAnaesthetize</texPath>
+    </graphicData>
+    <uiOrder>44</uiOrder>
+    <costList>
+      <KE_Shell_Anaesthetize>2</KE_Shell_Anaesthetize>
+    </costList>
+    <designationHotKey>Misc11</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>8.9</explosiveRadius>
+        <!-- <explosiveDamageType>AnaesthetizeGas</explosiveDamageType> -->
+        <explosiveDamageType>ToxGas</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <!-- <postExplosionGasType>AnaesthetizeGas</postExplosionGasType> -->
+        <postExplosionGasType>ToxGas</postExplosionGasType>
+        <wickTicks>15</wickTicks>
+        <startWickOnDamageTaken>
+          <li>Bullet</li>
+          <li>Arrow</li>
+          <li>ArrowHighVelocity</li>
+        </startWickOnDamageTaken>
+      </li>
+    </comps>
+    <specialDisplayRadius>10.9</specialDisplayRadius>
+  </ThingDef>
+
+
+</Defs>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>KE_Shell_Anaesthetize</defName>
+    <label>K.E. anaesthetize shell</label>
+    <description>An artillery shell containing reagents that, when combined, generate deadly anaesthetize gas. When fired, it will stick into the ground and release anaesthetize gas for some time before expiring.\n\Anaesthetize gas burns the lungs and eyes, causing a temporary shortness of breath and reduction in sight. Continued exposure to anaesthetize gas results in toxic buildup that can be lethal.</description>
+    <possessionCount>2</possessionCount>
+    <graphicData>
+      <!-- <texPath>Things/Item/Resource/Shell/KE_Shell_Anaesthetize</texPath> -->
+      <texPath>Things/Item/Resource/Shell/Shell_Toxic</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>10</Steel>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <costListForDifficulty>
+      <difficultyVar>classicMortars</difficultyVar>
+      <costList>
+        <Steel>15</Steel>
+        <Chemfuel>15</Chemfuel>
+      </costList>
+    </costListForDifficulty>
+    <recipeMaker>
+      <!-- <researchPrerequisite>KE_AnaesthetizeGas</researchPrerequisite> -->
+      <researchPrerequisite>KE_WeaponTech_T4</researchPrerequisite>
+      <displayPriority>120</displayPriority>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <!-- <explosiveDamageType>AnaesthetizeGas</explosiveDamageType> -->
+        <explosiveDamageType>ToxGas</explosiveDamageType>
+        <explosiveRadius>4</explosiveRadius>
+        <!-- <postExplosionGasType>AnaesthetizeGas</postExplosionGasType> -->
+        <postExplosionGasType>ToxGas</postExplosionGasType>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>KE_Bullet_Shell_Anaesthetize</projectileWhenLoaded>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>KE_Bullet_Shell_Anaesthetize</defName>
+    <label>K.E. bullet anaesthetize shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellTox</texPath>
+      <!-- <texPath>Things/Projectile/KE_ShellAnaesthetize</texPath> -->
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>KE_Damage_AnaesthetizeGas</damageDef>
+      <speed>41</speed>
+      <explosionRadius>0.1</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>ToxicShellLanded</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Shell_Toxic_Releasing</postExplosionSpawnThingDef>
+      <postExplosionSpawnThingDefWater>Shell_Toxic_Releasing_Water</postExplosionSpawnThingDefWater>
+    </projectile>
+  </ThingDef>
+
+
+</Defs>
