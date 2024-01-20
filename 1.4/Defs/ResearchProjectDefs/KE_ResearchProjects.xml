@@ -11,9 +11,25 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.10</researchViewY>
     <prerequisites>
-      <li>Gunsmithing</li>
+      <li>GasOperation</li>
+      <li>MicroelectronicsBasics</li>
     </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
 		<tab>KE_Mod_Tech</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>KE_Walls</defName>
+    <label>K.E. walls</label>
+    <description>K.E. walls.</description>
+    <baseCost>2444</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+    <tab>KE_Mod_Tech</tab>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -36,7 +52,7 @@
     <description>Craft a selection of K.E. weapons, including K.E. Anesthetic Sniper Short Rifle.</description>
     <baseCost>3444</baseCost>
     <techLevel>Industrial</techLevel>
-    <researchViewX>1.00</researchViewX>
+    <researchViewX>2.00</researchViewX>
     <researchViewY>0.10</researchViewY>
     <prerequisites>
       <li>KE_WeaponTech_T2</li>
@@ -50,7 +66,7 @@
     <description>Nothing Yet.</description>
     <baseCost>4444</baseCost>
     <techLevel>Industrial</techLevel>
-    <researchViewX>1.00</researchViewX>
+    <researchViewX>3.00</researchViewX>
     <researchViewY>0.10</researchViewY>
     <prerequisites>
       <li>KE_WeaponTech_T3</li>

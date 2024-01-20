@@ -2,7 +2,7 @@
 <Defs>
 
 
-    <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>KE_Turret_AnestheticTurret</defName>
     <label>Anesthetic turret</label>
     <description>A portable automatic anesthetic turret. Requires steel MedicineHerbal to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
@@ -76,9 +76,9 @@
         <soundActivate>FoamTurret_Activate</soundActivate>
         <targetingParameters>
           <canTargetBuildings>false</canTargetBuildings>
-          <canTargetAnimals>false</canTargetAnimals>
-          <canTargetMechs>false</canTargetMechs>
-          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+          <!-- <canTargetAnimals>true</canTargetAnimals> -->
+          <!-- <canTargetMechs>true</canTargetMechs> -->
+          <!-- <onlyTargetControlledPawns>true</onlyTargetControlledPawns> -->
         </targetingParameters>
       </li>
     </comps>

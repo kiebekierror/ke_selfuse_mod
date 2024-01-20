@@ -42,7 +42,7 @@
         <defaultProjectile>Bullet_SniperRifle</defaultProjectile>
         <warmupTime>0.44</warmupTime>
         <range>94.0</range>
-        <burstShotCount>4</burstShotCount>
+        <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <soundCast>Shot_SniperRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
