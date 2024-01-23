@@ -3,7 +3,7 @@
 	<DesignationCategoryDef>
 		<defName>KE_Mod</defName>
 		<label>K.E. Mod</label>
-		<order>400</order>
+		<order>0</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>
