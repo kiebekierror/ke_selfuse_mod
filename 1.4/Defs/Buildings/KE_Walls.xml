@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" Name="ReinforcedWall">
+    <defName>KE_Wall</defName>
+    <label>K.E. wall</label>
+    <description>A strong impassable wall made to withstand lots of abuse and direct explosions. Capable of holding up a roof.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>KE_Walls/Reinforced_Walls</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>RWIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+      <WorkToBuild>280</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costStuffCount>15</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <!-- <designationCategory>Structure</designationCategory> -->
+    <designationCategory>KE_mod</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costList>
+    	<Steel>5</Steel>
+    </costList>
+    <building>
+      <paintable>true</paintable>
+      <isInert>true</isInert>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>Door</li>
+        <li>Autodoor</li>
+      </relatedBuildCommands>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+    </damageMultipliers>
+    <researchPrerequisites>
+      <li>KE_Walls</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="ReinforcedWall">
+    <defName>KE_Embrasure</defName>
+    <label>K.E. embrasure</label>
+    <description>A strong impassable wall made to withstand lots of abuse and direct explosions. Capable of holding up a roof. Designed with tactical holes to see and fire through.</description>
+    <uiIconPath>RWEmbrasureIcon</uiIconPath>
+    <graphicData>
+      <texPath>KE_Walls/RW_Embrasure</texPath>
+    </graphicData>
+    <fillPercent>0.99</fillPercent>
+  </ThingDef>
+
+  <ThingDef ParentName="ReinforcedWall" Name="PowerWall">
+  <thingClass>VFESecurity.Building_Shield</thingClass>
+  <defName>KE_PowerWall</defName>
+  <label>K.E. Power wall</label>
+  <description>By adding into reinforced wall a  small plasteel  capacitor, your walls can emmit  a force field.</description>
+  <tickerType>Normal</tickerType>
+  <uiIconPath>PowerWallIcon</uiIconPath>
+  <graphicData>
+    <texPath>KE_Walls/Power_wals</texPath>
+    <graphicClass>Graphic_Appearances</graphicClass>
+  </graphicData>
+  <costList>
+    <Plasteel>15</Plasteel>
+    <Shell_EMP>1</Shell_EMP>
+  </costList>
+  <statBases>
+    <VFES_EnergyShieldEnergyMax>2</VFES_EnergyShieldEnergyMax>
+    <VFES_EnergyShieldRechargeRate>1.04</VFES_EnergyShieldRechargeRate>
+    <VFES_EnergyShieldRadius>1.8</VFES_EnergyShieldRadius>
+  </statBases>
+  <comps>
+    <li Class="CompProperties_Explosive">
+      <explosiveRadius>1</explosiveRadius>
+      <explosiveDamageType>EMP</explosiveDamageType>
+    </li>
+    <li Class="CompProperties_Power">
+      <compClass>CompPowerTrader</compClass>
+      <basePowerConsumption>100</basePowerConsumption>
+      <shortCircuitInRain>false</shortCircuitInRain>
+      <transmitsPower>true</transmitsPower>
+      <soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+    </li>
+    <li Class="CompProperties_Flickable" />
+    <li Class="CompProperties_Glower">
+      <glowRadius>2.0</glowRadius>
+      <glowColor>(0,235,235)</glowColor>
+    </li>
+  </comps>
+  <modExtensions>
+    <li Class="VFESecurity.ExtendedBuildingProperties">
+      <initialEnergyPercentage>0.2</initialEnergyPercentage>
+      <rechargeTicksWhenDepleted>1300</rechargeTicksWhenDepleted>
+      <shortCircuitChancePerEnergyLost>0.01</shortCircuitChancePerEnergyLost>
+      <inactivePowerConsumption>10</inactivePowerConsumption>
+      <shieldColour>(0, 0.9, 0.9, 0.1)</shieldColour>
+    </li>
+  </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="PowerWall">
+    <defName>KE_PowerEmbrasure</defName>
+    <label>K.E. Power embrasure</label>
+    <description>By adding into reinforced wall a  small plasteel  capacitor, your walls can emmit  a force field. Now you made shooting holes in it.</description>
+    <graphicData>
+      <texPath>KE_Walls/Power_Embrasure</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+    </graphicData>
+    <uiIconPath>PowerEmbrasureIcon</uiIconPath>
+    <fillPercent>0.99</fillPercent>
+  </ThingDef>
+
+</Defs>

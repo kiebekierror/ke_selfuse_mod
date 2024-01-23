@@ -25,7 +25,7 @@
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <SlaveSuppressionOffset>1</SlaveSuppressionOffset>
+      <SlaveSuppressionOffset>2</SlaveSuppressionOffset>
     </equippedStatOffsets>
     <apparel>
       <slaveApparel>true</slaveApparel>

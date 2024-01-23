@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <KE_Wall.label>K.E. 防暴墻</KE_Wall.label>
+  <KE_Wall.description>一個 K.E. 防暴墻</KE_Wall.description>
+
+  <KE_Embrasure.label>K.E. 槍眼防暴墻</KE_Embrasure.label>
+  <KE_Embrasure.description>一個 K.E. 槍眼防暴墻</KE_Embrasure.description>
+
+
+  <KE_PowerWall.label>K.E. 能量防暴墻</KE_PowerWall.label>
+  <KE_PowerWall.description>一個 K.E. 能量防暴墻</KE_PowerWall.description>
+
+  <KE_PowerEmbrasure.label>K.E. 能量槍眼防暴墻</KE_PowerEmbrasure.label>
+  <KE_PowerEmbrasure.description>一個 K.E. 能量槍眼防暴墻</KE_PowerEmbrasure.description>
+
+</LanguageData>
