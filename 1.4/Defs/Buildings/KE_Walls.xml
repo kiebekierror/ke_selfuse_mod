@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="BuildingBase" Name="ReinforcedWall">
-    <defName>KE_Wall</defName>
-    <label>K.E. wall</label>
-    <description>A strong impassable wall made to withstand lots of abuse and direct explosions. Capable of holding up a roof.</description>
+  <ThingDef ParentName="BuildingBase" Name="KEWallBase">
+    <defName>KE_Embrasure</defName>
+    <label>K.E. embrasure</label>
+    <description>A strong impassable wall made to withstand lots of abuse and direct explosions. Capable of holding up a roof. Designed with tactical holes to see and fire through.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>KE_Walls/Reinforced_Walls</texPath>
+      <texPath>KE_Walls/RW_Embrasure</texPath>
       <graphicClass>Graphic_Appearances</graphicClass>
       <linkType>CornerFiller</linkType>
       <linkFlags>
@@ -25,7 +25,7 @@
         <edgeRight>Damage/Edge</edgeRight>
       </damageData>
     </graphicData>
-    <uiIconPath>RWIcon</uiIconPath>
+    <uiIconPath>RWEmbrasureIcon</uiIconPath>
     <statBases>
       <MaxHitPoints>900</MaxHitPoints>
       <WorkToBuild>280</WorkToBuild>
@@ -37,7 +37,7 @@
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
+    <fillPercent>0.99</fillPercent>
     <coversFloor>true</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Never</tickerType>
@@ -46,8 +46,7 @@
     <neverMultiSelect>true</neverMultiSelect>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <holdsRoof>true</holdsRoof>
-    <!-- <designationCategory>Structure</designationCategory> -->
-    <designationCategory>KE_mod</designationCategory>
+    <designationCategory>KE_Mod</designationCategory>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
@@ -82,67 +81,10 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="ReinforcedWall">
-    <defName>KE_Embrasure</defName>
-    <label>K.E. embrasure</label>
-    <description>A strong impassable wall made to withstand lots of abuse and direct explosions. Capable of holding up a roof. Designed with tactical holes to see and fire through.</description>
-    <uiIconPath>RWEmbrasureIcon</uiIconPath>
-    <graphicData>
-      <texPath>KE_Walls/RW_Embrasure</texPath>
-    </graphicData>
-    <fillPercent>0.99</fillPercent>
-  </ThingDef>
 
-  <ThingDef ParentName="ReinforcedWall" Name="PowerWall">
-  <thingClass>VFESecurity.Building_Shield</thingClass>
-  <defName>KE_PowerWall</defName>
-  <label>K.E. Power wall</label>
-  <description>By adding into reinforced wall a  small plasteel  capacitor, your walls can emmit  a force field.</description>
-  <tickerType>Normal</tickerType>
-  <uiIconPath>PowerWallIcon</uiIconPath>
-  <graphicData>
-    <texPath>KE_Walls/Power_wals</texPath>
-    <graphicClass>Graphic_Appearances</graphicClass>
-  </graphicData>
-  <costList>
-    <Plasteel>15</Plasteel>
-    <Shell_EMP>1</Shell_EMP>
-  </costList>
-  <statBases>
-    <VFES_EnergyShieldEnergyMax>2</VFES_EnergyShieldEnergyMax>
-    <VFES_EnergyShieldRechargeRate>1.04</VFES_EnergyShieldRechargeRate>
-    <VFES_EnergyShieldRadius>1.8</VFES_EnergyShieldRadius>
-  </statBases>
-  <comps>
-    <li Class="CompProperties_Explosive">
-      <explosiveRadius>1</explosiveRadius>
-      <explosiveDamageType>EMP</explosiveDamageType>
-    </li>
-    <li Class="CompProperties_Power">
-      <compClass>CompPowerTrader</compClass>
-      <basePowerConsumption>100</basePowerConsumption>
-      <shortCircuitInRain>false</shortCircuitInRain>
-      <transmitsPower>true</transmitsPower>
-      <soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
-    </li>
-    <li Class="CompProperties_Flickable" />
-    <li Class="CompProperties_Glower">
-      <glowRadius>2.0</glowRadius>
-      <glowColor>(0,235,235)</glowColor>
-    </li>
-  </comps>
-  <modExtensions>
-    <li Class="VFESecurity.ExtendedBuildingProperties">
-      <initialEnergyPercentage>0.2</initialEnergyPercentage>
-      <rechargeTicksWhenDepleted>1300</rechargeTicksWhenDepleted>
-      <shortCircuitChancePerEnergyLost>0.01</shortCircuitChancePerEnergyLost>
-      <inactivePowerConsumption>10</inactivePowerConsumption>
-      <shieldColour>(0, 0.9, 0.9, 0.1)</shieldColour>
-    </li>
-  </modExtensions>
-  </ThingDef>
 
-  <ThingDef ParentName="PowerWall">
+  <ThingDef ParentName="KEWallBase" Name="KEPowerWall">
+    <thingClass>VFESecurity.Building_Shield</thingClass>
     <defName>KE_PowerEmbrasure</defName>
     <label>K.E. Power embrasure</label>
     <description>By adding into reinforced wall a  small plasteel  capacitor, your walls can emmit  a force field. Now you made shooting holes in it.</description>
@@ -152,6 +94,43 @@
     </graphicData>
     <uiIconPath>PowerEmbrasureIcon</uiIconPath>
     <fillPercent>0.99</fillPercent>
+    <tickerType>Normal</tickerType>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <Shell_EMP>1</Shell_EMP>
+    </costList>
+    <statBases>
+      <VFES_EnergyShieldEnergyMax>2</VFES_EnergyShieldEnergyMax>
+      <VFES_EnergyShieldRechargeRate>1.04</VFES_EnergyShieldRechargeRate>
+      <VFES_EnergyShieldRadius>1.8</VFES_EnergyShieldRadius>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1</explosiveRadius>
+        <explosiveDamageType>EMP</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>2.0</glowRadius>
+        <glowColor>(0,235,235)</glowColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VFESecurity.ExtendedBuildingProperties">
+        <initialEnergyPercentage>0.2</initialEnergyPercentage>
+        <rechargeTicksWhenDepleted>1300</rechargeTicksWhenDepleted>
+        <shortCircuitChancePerEnergyLost>0.01</shortCircuitChancePerEnergyLost>
+        <inactivePowerConsumption>10</inactivePowerConsumption>
+        <shieldColour>(0, 0.9, 0.9, 0.1)</shieldColour>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 </Defs>

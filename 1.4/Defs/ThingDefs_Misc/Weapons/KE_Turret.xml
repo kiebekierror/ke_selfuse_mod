@@ -84,7 +84,7 @@
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <!-- <designationCategory>Security</designationCategory> -->
-    <designationCategory>KE_mod</designationCategory>
+    <designationCategory>KE_Mod</designationCategory>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <building>
       <combatPower>45</combatPower>   <!-- same as a scavenger -->
