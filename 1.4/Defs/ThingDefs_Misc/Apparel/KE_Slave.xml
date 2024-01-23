@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>KE_Apparel_Collar</defName>
+    <label>K.E. slave collar</label>
+    <description>An uncomfortable collar made for slaves. It reminds the wearer of their slave status and psychologically suppresses them, reducing the chance of a slave rebellion.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.0</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SlaveSuppressionOffset>1</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <apparel>
+      <slaveApparel>true</slaveApparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+      <hatRenderedAboveBody>true</hatRenderedAboveBody>
+      <hatRenderedBehindHead>true</hatRenderedBehindHead>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <defaultOutfitTags>
+        <li>Slave</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <recipeMaker>
+      <displayPriority>175</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>
