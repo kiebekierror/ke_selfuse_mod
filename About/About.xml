@@ -16,11 +16,11 @@
       <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
       <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
     </li>
-    <li>
+    <!-- <li>
       <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
       <displayName>Vanilla Expanded Framework</displayName>
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
-    </li>
+    </li> -->
     <li>
       <packageId>VanillaExpanded.VFESecurity</packageId>
       <displayName>Vanilla Furniture Expanded - Security</displayName>
@@ -32,7 +32,7 @@
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
     <li>brrainz.harmony</li>
-    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <!-- <li>OskarPotocki.VanillaFactionsExpanded.Core</li> -->
     <li>VanillaExpanded.VFESecurity</li>
     <li>com.github.alandariva.moreplanning</li>
     <li>pathavoid.kv.rw</li>

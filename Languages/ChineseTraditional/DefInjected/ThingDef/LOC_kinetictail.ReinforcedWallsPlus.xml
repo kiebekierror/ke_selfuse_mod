@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- kinetictail.ReinforcedWallsPlus -->
+
+
+  <ReinforcedWall.label>防暴墻</ReinforcedWall.label>
+  <ReinforcedWall.description>一個防暴墻</ReinforcedWall.description>
+
+
+  <ReinforcedEmbrasure.label>槍眼防暴墻</ReinforcedEmbrasure.label>
+  <ReinforcedEmbrasure.description>一個槍眼防暴墻</ReinforcedEmbrasure.description>
+
+
+  <PowerWall.label>能量防暴墻</PowerWall.label>
+  <PowerWall.description>一個能量防暴墻</PowerWall.description>
+
+
+  <PowerEmbrasure.label>能量槍眼防暴墻</PowerEmbrasure.label>
+  <PowerEmbrasure.description>一個能量槍眼防暴墻</PowerEmbrasure.description>
+
+</LanguageData>
